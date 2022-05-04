@@ -1,0 +1,475 @@
+/* Variables */
+
+:root {
+  --basic-white: #ffffff;
+  --opacity-white: rgba(255, 255, 255, 0.5);
+  /*потому что не получается сделать полупрозрачность состояний свойствами*/
+  --opacity-white-feature: rgba(255, 255, 255, 0.3);
+  --basic-black: #000000;
+  --yellow-footer-nav: #ffd180;
+  --extra-dark-hover: #161D29;
+  --dark-top-nav: #293449;
+  --basic-gray: #f1f5f7;
+  --basic-beige: #f9f5f0;
+  --basic-dark: #32425c;
+  --basic-dark-opacty: rgb(20%, 26%, 36%, 0.5);
+  --basic-filter: #f7f3ec;
+
+  --feature-yellow: #ffbf47;
+  --feature-blue: #3bbce3;
+  --feature-purple: #dc91d8;
+  --feature-green: #8ed78f;
+
+  --button-green: #63a63e;
+  --button-green-hover: #5fbb2d;
+  --button-green-click: #518534;
+
+  --basic-red: #ee3643;
+  --basic-red-hover: #ca2c37;
+  --basic-red-click: #ba2732;
+
+  --button-service-hover: rgba(197, 197, 197, 0.3);
+  --button-service-click: rgba(169, 169, 169, 0.3);
+
+  --nav-dark-hover: #1d2739;
+  --span-gray: #a9a9a9;
+  --gray: #C5C5C5;
+
+  --dark-social: #212A3A;
+  --modal-background: #F4F4F4;
+}
+
+.page-body,
+.catalog-body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "cuprum", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-black);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  background-color: var(--basic-gray);
+}
+
+header {
+  background-color: var(--basic-gray);
+}
+
+.first-nav-line {
+  font-size: 18px;
+  background-color: var(--dark-top-nav);
+}
+
+.first-nav-list {
+  list-style: none;
+}
+
+.first-nav-list a {
+  color: var(--basic-white);
+}
+
+.logo-top {
+  width: 220px;
+  height: 47px;
+}
+
+.logo-footer {
+  width: 220px;
+  height: 68px;
+}
+
+.logo:active {
+  background-color: var(--basic-red-click);
+}
+
+.logo img {
+  background-color: transparent;
+}
+
+.bookmark:active {
+  background-color: var(--extra-dark-hover);
+  color: var(--opacity-white);
+}
+
+.cart:active {
+  background-color: var(--extra-dark-hover);
+  color: var(--opacity-white);
+}
+
+.order {
+  background-color: var(--button-green);
+}
+
+.order:hover,
+.order:focus {
+  background-color: var(--button-green-hover);
+}
+
+.order:active {
+  color: var(--opacity-white);
+}
+
+.header-info-about {
+  font-style: italic;
+  font-size: 16px;
+  line-height: 23px;
+  color: var(--basic-red);
+}
+
+.header-info-contacts {
+  font-size: 14px;
+  color: var(--basic-dark);
+}
+
+.header-info-contacts a {
+  font-size: 14px;
+  color: var(--basic-red);
+}
+
+.user-button {
+  font-size: 21px;
+  line-height: 21px;
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+}
+
+.user-button:hover,
+.user-button:focus {
+  color: var(--basic-red);
+}
+
+.user-button:active {
+  color: var(--button-service-hover);
+}
+
+.main-nav-list {
+  list-style: none;
+}
+
+.main-nav {
+  font-size: 13px;
+  color: var(--basic-white);
+  background-color: var(--basic-dark);
+}
+
+.main-nav-list a {
+  color: var(--basic-white);
+  font-size: 18px;
+}
+
+.main-nav-list a:hover,
+.main-nav-list a:focus {
+  background-color: var(--dark-top-nav);
+}
+
+.container {
+  width: 940px;
+}
+
+.features-list {
+  list-style: none;
+}
+
+.feature-heading {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--basic-white);
+}
+
+.button {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+}
+
+.feature-button {
+  background-color: var(--opacity-white-feature);
+}
+
+.feature-button:hover,
+.feature-button:focus {
+  background-color: var(--button-service-hover);
+}
+
+.feature-button:active {
+  background-color: var(--button-service-click);
+
+}
+
+.feature-materials {
+  background-color: var(--feature-yellow);
+}
+
+.feature-tools {
+  background-color: var(--feature-blue);
+}
+
+.feature-equipment {
+  background-color: var(--feature-purple);
+}
+
+.feature-sales {
+  background-color: var(--feature-green);
+}
+
+.feature-delivery {
+  background-color: var(--feature-yellow);
+}
+
+.button-red {
+  background-color: var(--basic-red);
+}
+
+.button-red:focus,
+.button-red:hover {
+  background-color: var(--basic-red-hover);
+}
+
+.button-red:active {
+  background-color: var(--basic-red-click);
+}
+
+.slider-caption {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+}
+
+.slider-text {
+  font-size: 18px;
+  color: var(--basic-white);
+}
+
+.label {
+  background-color: var(--basic-beige);
+}
+
+.heading {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-dark);
+}
+
+.popular-products-list {
+  list-style: none;
+}
+
+.product-heading {
+  font-family: 'PT Sans';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.products-item span {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  color: var(--span-gray);
+  text-decoration: line-through;
+  text-transform: uppercase;
+}
+
+.button-buy {
+  background-color: var(--button-green);
+}
+
+.button-buy:hover,
+.button-buy:focus {
+  background-color: var(--button-green-hover)
+}
+
+.button-buy:active {
+  background-color: var(--button-green-click);
+}
+
+.button-bookmark {
+  border: 3px solid var(--button-green);
+  color: var(--basic-dark);
+  background-color: var(--basic-white);
+}
+
+.button-bookmark:hover,
+.button-bookmark:focus {
+  border: 3px solid var(--basic-dark);
+}
+
+.button-bookmark:active {
+  border: 3px solid var(--basic-dark-opacity);
+  color: var(--basic-dark-opacity);
+}
+
+.brands-list {
+  list-style: none;
+}
+
+.services {
+  min-width: 100%;
+  background-color: var(--basic-gray);
+}
+
+.service-heading {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.service-item-heading {
+  color: var(--basic-dark)
+}
+
+.services-buttons-list {
+  list-style: none;
+}
+
+.service-button {
+  background-color: var(--basic-dark);
+}
+
+.service-button:hover,
+.service-button:focus {
+  background-color: var(--dark-top-nav)
+}
+
+.service-button:active,
+.service-button-active
+
+/*это чтобы активная кнопка не меняла цвет*/
+  {
+  background-color: var(--basic-white);
+  color: var(--basic-dark);
+}
+
+.wrapper-about {
+  width: 940px;
+}
+
+.heading-about {
+  color: var(--basic-black)
+}
+
+.delivery-company-list {
+  list-style: none;
+}
+
+.delivery-company-item {
+  font-size: 18px;
+}
+
+.main-footer {
+  background-color: var(--basic-dark);
+  color: var(--basic-white);
+  font-size: 18px;
+}
+
+.main-footer a {
+  color: var(--basic-white);
+}
+
+.footer-first-nav-list,
+.footer-second-nav-list {
+  list-style: none;
+}
+
+.footer-second-nav-list a {
+  color: var(--yellow-footer-nav);
+  font-size: 18px;
+}
+
+.footer-first-nav-list a:hover,
+.footer-first-nav-list a:focus,
+.footer-second-nav-list a:hover,
+.footer-second-nav-list a:focus {
+  text-decoration: underline;
+}
+
+/*не знаю как сделать состояние click, делать полупрозрачный цвет
+каждый раз вроде бы тупо, а если добавляю opacity, делается полупрозрачным что не надо*/
+
+
+.footer-bottom {
+  background-color: var(--dark-top-nav);
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.footer-social-list {
+  list-style: none;
+}
+
+.footer-social-list img {
+  /*почему не работает по тегу а?*/
+  background-color: var(--dark-social);
+}
+
+.footer-social-list img:hover,
+/*вообще никак не работает*/
+.footer-social-list img:focus,
+.footer-social-list img:click {
+  background-color: var(--basic-red);
+}
+
+.footer-mail a,
+.authors a {
+  color: var(--yellow-footer-nav);
+}
+
+.footer-mail a:hover,
+.footer-mail a:focus,
+.authors a:focus,
+.authors a:hover {
+  text-decoration: underline;
+}
+
+.footer-mail a:active,
+.authors a:active {
+  color: var(--basic-red);
+}
+
+.modal {
+  width: 620px;
+  height: 430px;
+  font-family: 'Cuprum';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-black);
+}
+
+.modal input,
+.modal-input-text {
+  background-color: transparent;
+  border: solid 2px var(--gray);
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--span-gray);
+}
+
+.modal-button-wrapper {
+  width: 620px;
+  height: 112px;
+  background-color: var(--modal-background);
+}
