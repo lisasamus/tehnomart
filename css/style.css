@@ -6,6 +6,7 @@
   /*потому что не получается сделать полупрозрачность состояний свойствами*/
   --opacity-white-feature: rgba(255, 255, 255, 0.3);
   --basic-black: #000000;
+  --opacity-black: rgba(0, 0, 0, 0.3);
   --yellow-footer-nav: #ffd180;
   --extra-dark-hover: #161D29;
   --dark-top-nav: #293449;
@@ -37,6 +38,61 @@
 
   --dark-social: #212A3A;
   --modal-background: #F4F4F4;
+  --light-gray: #e5e5e5;
+}
+
+@font-face {
+  font-family: "cuprum";
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/cuprum.woff2"),
+    url("../fonts/cuprum.woff");
+}
+
+@font-face {
+  font-family: "cuprum";
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/cuprumbold.woff2"),
+    url("../fonts/cuprumbold.woff");
+}
+
+@font-face {
+  font-family: "cuprum";
+  font-display: swap;
+  font-weight: 400;
+  font-style: italic;
+  src: url("../fonts/cuprumitalic.woff2"),
+    url("../fonts/cuprumitalic.woff");
+}
+
+@font-face {
+  font-family: "cuprum";
+  font-display: swap;
+  font-weight: 700;
+  font-style: italic;
+  src: url("../fonts/cuprumbolditalic.woff2"),
+    url("../fonts/cuprumbolditalic.woff");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/ptsans.woff2"),
+    url("../fonts/ptsans.woff");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/ptsansbold.woff2"),
+    url("../fonts/ptsansbold.woff");
 }
 
 .page-body,
@@ -65,10 +121,11 @@ header {
   background-color: var(--basic-gray);
 }
 
-.first-nav-line {
-  font-size: 18px;
+.top-nav {
   background-color: var(--dark-top-nav);
+  font-size: 18px;
 }
+
 
 .first-nav-list {
   list-style: none;
@@ -132,9 +189,11 @@ header {
 }
 
 .header-info-contacts a {
-  font-size: 14px;
+  font-size: 21px;
+  line-height: 30px;
   color: var(--basic-red);
 }
+
 
 .user-button {
   font-size: 21px;
@@ -174,6 +233,7 @@ header {
 
 .container {
   width: 940px;
+  margin: 0 auto;
 }
 
 .features-list {
@@ -241,6 +301,10 @@ header {
   background-color: var(--basic-red-click);
 }
 
+.slider-list {
+  list-style: none;
+}
+
 .slider-caption {
   font-weight: 700;
   font-size: 36px;
@@ -277,13 +341,21 @@ header {
   line-height: 20px;
 }
 
-.products-item span {
+.old-price {
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
   color: var(--span-gray);
   text-decoration: line-through;
+  text-transform: uppercase;
+}
+
+.label-new {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
   text-transform: uppercase;
 }
 
@@ -357,10 +429,6 @@ header {
   {
   background-color: var(--basic-white);
   color: var(--basic-dark);
-}
-
-.wrapper-about {
-  width: 940px;
 }
 
 .heading-about {
@@ -448,7 +516,7 @@ header {
 .modal {
   width: 620px;
   height: 430px;
-  font-family: 'Cuprum';
+  font-family: 'cuprum';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -472,4 +540,172 @@ header {
   width: 620px;
   height: 112px;
   background-color: var(--modal-background);
+}
+
+/*catalog*/
+.current-user-name {
+  font-family: 'cuprum';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 21px;
+  text-decoration: none;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.user-nav-list {
+  list-style: none;
+}
+
+.user-nav-list a {
+  list-style: none;
+  font-family: 'cuprum';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-dark);
+}
+
+.bread-crumps {
+  list-style: none;
+}
+
+.heading-filter {
+  font-family: 'PT Sans';
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.heading-gray {
+  background-color: var(--basic-gray);
+}
+
+.bread-crumps a {
+  color: var(--basic-black);
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.filter-name {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.price-range {
+  font-size: 17px;
+}
+
+.filter-beige {
+  background-color: var(--basic-filter);
+}
+
+.filter-list {
+  list-style: none;
+}
+
+.filter-list li {
+  font-size: 15px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+.filter-button {
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-black);
+  border: solid 1px var(--light-gray);
+}
+
+.filter-sort-list {
+  list-style: none;
+}
+
+.filter-sort-list a {
+  color: var(--basic-black);
+  line-height: 18px;
+  text-transform: uppercase;
+  border-bottom: 1px dotted var(--basic-red);
+  opacity: 0.3;
+}
+
+.filter-sort-list a:focus,
+.filter-sort-list a:hover {
+  color: var(--basic-black);
+  border-bottom: 1px solid var(--basic-red);
+  opacity: 1;
+}
+
+.filter-sort-list a:active {
+  color: var(--basic-red);
+  border-bottom: none;
+}
+
+.filter-current a,
+.filter-current a:hover,
+.filter-current a:focus,
+.filter-current a:active {
+  color: var(--basic-red);
+  border-bottom: none;
+  opacity: 1;
+}
+
+.products-list {
+  list-style: none;
+}
+
+.pagination {
+  list-style: none;
+}
+
+.pagination a {
+  color: var(--basic-black);
+  border: 1px solid var(--light-gray);
+  border-radius: 2px;
+}
+
+.pagination a:hover,
+.pagination a:focus {
+  border: 1px solid var(--gray);
+}
+
+.pagination a:active {
+  border: 1px solid var(--basic-red);
+}
+
+.current-page a,
+.current-page a:focus,
+.current-page a:hover,
+.current-page a:active {
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+  border: 1px solid var(--basic-red);
+}
+
+.text-container {
+  background-color: var(--basic-gray);
+}
+
+.text-container .heading {
+  font-family: 'cuprum';
+  color: var(--basic-black);
+}
+
+.text {
+  line-height: 24px;
+  text-transform: none;
+}
+
+.button-shopping {
+  font-family: 'Cuprum';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+  border: none;
 }
