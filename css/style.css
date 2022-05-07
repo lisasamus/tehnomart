@@ -46,48 +46,53 @@
   font-display: swap;
   font-weight: 400;
   font-style: normal;
-  src: local("fonts/cuprum.woff2"),
-    local("fonts/cuprum.woff");
+  src: local("../fonts/cuprum.woff2"),
+    local("../fonts/cuprum.woff");
 }
 
 @font-face {
   font-family: "cuprum";
+  font-display: swap;
   font-weight: 700;
   font-style: normal;
-  src: local("fonts/cuprumbold.woff2"),
-    local("fonts/cuprumbold.woff");
+  src: local("../fonts/cuprumbold.woff2"),
+    local("../fonts/cuprumbold.woff");
 }
 
 @font-face {
   font-family: "cuprum";
+  font-display: swap;
   font-weight: 400;
   font-style: italic;
-  src: local("fonts/cuprumitalic.woff2"),
-    local("fonts/cuprumitalic.woff");
+  src: local("../fonts/cuprumitalic.woff2"),
+    local("../fonts/cuprumitalic.woff");
 }
 
 @font-face {
   font-family: "cuprum";
+  font-display: swap;
   font-weight: 700;
   font-style: italic;
-  src: local("fonts/cuprumbolditalic.woff2"),
-    local("fonts/cuprumbolditalic.woff");
+  src: local("../fonts/cuprumbolditalic.woff2"),
+    local("../fonts/cuprumbolditalic.woff");
 }
 
 @font-face {
   font-family: "PT Sans";
+  font-display: swap;
   font-weight: 400;
   font-style: normal;
-  src: local("fonts/ptsans.woff2"),
-    local("fonts/ptsans.woff");
+  src: local("../fonts/ptsans.woff2"),
+    local("../fonts/ptsans.woff");
 }
 
 @font-face {
   font-family: "PT Sans";
+  font-display: swap;
   font-weight: 700;
   font-style: normal;
-  src: local("fonts/ptsansbold.woff2"),
-    local("fonts/ptsansbold.woff");
+  src: local("../fonts/ptsansbold.woff2"),
+    local("../fonts/ptsansbold.woff");
 }
 
 .page-body,
@@ -116,10 +121,11 @@ header {
   background-color: var(--basic-gray);
 }
 
-.first-nav-line {
-  font-size: 18px;
+.top-nav {
   background-color: var(--dark-top-nav);
+  font-size: 18px;
 }
+
 
 .first-nav-list {
   list-style: none;
@@ -227,6 +233,7 @@ header {
 
 .container {
   width: 940px;
+  margin: 0 auto;
 }
 
 .features-list {
@@ -424,10 +431,6 @@ header {
   color: var(--basic-dark);
 }
 
-.wrapper-about {
-  width: 940px;
-}
-
 .heading-about {
   color: var(--basic-black)
 }
@@ -564,15 +567,10 @@ header {
   color: var(--basic-dark);
 }
 
-.wrapper {
-  width: 940px;
-}
-
 .bread-crumps {
   list-style: none;
 }
 
-.container,
 .heading-filter {
   font-family: 'PT Sans';
   font-weight: 400;
@@ -582,12 +580,14 @@ header {
   text-transform: uppercase;
 }
 
-.container h2 {
+.heading-gray {
   background-color: var(--basic-gray);
 }
 
 .bread-crumps a {
   color: var(--basic-black);
+  line-height: 18px;
+  text-transform: uppercase;
 }
 
 .filter-name {
@@ -608,9 +608,10 @@ header {
   list-style: none;
 }
 
-.filter-list a {
+.filter-list li {
   font-size: 15px;
   line-height: 19px;
+  text-transform: uppercase;
 }
 
 .filter-button {
@@ -626,6 +627,8 @@ header {
 
 .filter-sort-list a {
   color: var(--basic-black);
+  line-height: 18px;
+  text-transform: uppercase;
   border-bottom: 1px dotted var(--basic-red);
   opacity: 0.3;
 }
@@ -683,14 +686,8 @@ header {
   border: 1px solid var(--basic-red);
 }
 
-.bottom-wrapper {
-  /*почему не растянулся????*/
-  width: 100%;
-  background-color: var(--basic-gray);
-}
-
 .text-container {
-  width: 940px;
+  background-color: var(--basic-gray);
 }
 
 .text-container .heading {
@@ -701,4 +698,14 @@ header {
 .text {
   line-height: 24px;
   text-transform: none;
+}
+
+.button-shopping {
+  font-family: 'Cuprum';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+  border: none;
 }
