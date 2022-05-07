@@ -46,8 +46,8 @@
   font-display: swap;
   font-weight: 400;
   font-style: normal;
-  src: local("../fonts/cuprum.woff2"),
-    local("../fonts/cuprum.woff");
+  src: url("../fonts/cuprum.woff2"),
+    url("../fonts/cuprum.woff");
 }
 
 @font-face {
@@ -55,8 +55,8 @@
   font-display: swap;
   font-weight: 700;
   font-style: normal;
-  src: local("../fonts/cuprumbold.woff2"),
-    local("../fonts/cuprumbold.woff");
+  src: url("../fonts/cuprumbold.woff2"),
+    url("../fonts/cuprumbold.woff");
 }
 
 @font-face {
@@ -64,8 +64,8 @@
   font-display: swap;
   font-weight: 400;
   font-style: italic;
-  src: local("../fonts/cuprumitalic.woff2"),
-    local("../fonts/cuprumitalic.woff");
+  src: url("../fonts/cuprumitalic.woff2"),
+    url("../fonts/cuprumitalic.woff");
 }
 
 @font-face {
@@ -73,8 +73,8 @@
   font-display: swap;
   font-weight: 700;
   font-style: italic;
-  src: local("../fonts/cuprumbolditalic.woff2"),
-    local("../fonts/cuprumbolditalic.woff");
+  src: url("../fonts/cuprumbolditalic.woff2"),
+    url("../fonts/cuprumbolditalic.woff");
 }
 
 @font-face {
@@ -82,8 +82,8 @@
   font-display: swap;
   font-weight: 400;
   font-style: normal;
-  src: local("../fonts/ptsans.woff2"),
-    local("../fonts/ptsans.woff");
+  src: url("../fonts/ptsans.woff2"),
+    url("../fonts/ptsans.woff");
 }
 
 @font-face {
@@ -91,8 +91,8 @@
   font-display: swap;
   font-weight: 700;
   font-style: normal;
-  src: local("../fonts/ptsansbold.woff2"),
-    local("../fonts/ptsansbold.woff");
+  src: url("../fonts/ptsansbold.woff2"),
+    url("../fonts/ptsansbold.woff");
 }
 
 .page-body,
