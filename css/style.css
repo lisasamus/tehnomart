@@ -39,6 +39,7 @@
   --dark-social: #212A3A;
   --modal-background: #F4F4F4;
   --light-gray: #e5e5e5;
+  --modal-gray: #f1f1f1;
 }
 
 @font-face {
@@ -252,6 +253,7 @@ header {
   line-height: 18px;
   text-transform: uppercase;
   color: var(--basic-white);
+  border: none;
 }
 
 .feature-button {
@@ -413,6 +415,10 @@ header {
   list-style: none;
 }
 
+.service-description-list {
+  list-style: none;
+}
+
 .service-button {
   background-color: var(--basic-dark);
 }
@@ -422,11 +428,9 @@ header {
   background-color: var(--dark-top-nav)
 }
 
-.service-button:active,
-.service-button-active
-
 /*это чтобы активная кнопка не меняла цвет*/
-  {
+.service-button:active,
+.service-button-active {
   background-color: var(--basic-white);
   color: var(--basic-dark);
 }
@@ -470,9 +474,6 @@ header {
   text-decoration: underline;
 }
 
-/*не знаю как сделать состояние click, делать полупрозрачный цвет
-каждый раз вроде бы тупо, а если добавляю opacity, делается полупрозрачным что не надо*/
-
 
 .footer-bottom {
   background-color: var(--dark-top-nav);
@@ -490,9 +491,8 @@ header {
 }
 
 .footer-social-list img:hover,
-/*вообще никак не работает*/
 .footer-social-list img:focus,
-.footer-social-list img:click {
+.footer-social-list img:active {
   background-color: var(--basic-red);
 }
 
@@ -707,5 +707,8 @@ header {
   line-height: 18px;
   background-color: var(--basic-white);
   color: var(--basic-black);
-  border: none;
+}
+
+.modal-button-wrap {
+  background-color: var(--modal-gray);
 }
