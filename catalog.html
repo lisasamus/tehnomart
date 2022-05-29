@@ -19,15 +19,17 @@
     <section class="top-nav">
       <div class="container">
         <div class="top-nav-wrap">
-          <a href="#" class="logo top-nav-logo button-red">
-            <img class="logo-img" src="img/icons/logo-technomart.svg" width="108" height="18" alt="logo">
-          </a>
-          <form action="https://echo.htmlacademy.ru" method="GET" class="top-nav-form-search">
-            <button type="submit" class="top-nav-button-search">
-              <img class="top-nav-search-img" src="#" alt="Поиск">
-            </button>
-            <input name="search" type="search" placeholder="Поиск: " class="top-nav-input-search">
-          </form>
+          <div class="top-nav-wrap-wrap">
+            <a href="#" class="logo top-nav-logo button-red">
+              <img class="logo-img" src="img/icons/logo-technomart.svg" width="108" height="18" alt="logo">
+            </a>
+            <form action="https://echo.htmlacademy.ru" method="GET" class="top-nav-form-search">
+              <button type="submit" class="top-nav-button-search">
+                <img class="top-nav-search-img" src="#" alt="Поиск">
+              </button>
+              <input name="search" type="search" placeholder="Поиск: " class="top-nav-input-search">
+            </form>
+          </div>
           <ul class="top-nav-first-list">
             <li class="top-nav-first-list-item"><a href="#" class="top-nav-bookmark">Закладки</a></li>
             <li class="top-nav-first-list-item"><a href="#" class="top-nav-cart button-red">Корзина: 10</a></li>
@@ -52,11 +54,16 @@
             <p class="header-info-contacts-address">Адрес: г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
           </div>
           <div class="header-info-user-list">
-            <a href="#" class="header-info-user-exit"><img class="header-info-exit" src="#" alt="Выйти из профиля"></a>
-            <a href="#" class="header-info-current-user-name">Равшан Джамшутович</a>
+            <div class="header-user-login-list">
+              <a href="#" class="header-info-user-exit">
+                <img class="header-info-exit-img" src="#" alt="Выйти из профиля">
+              </a>
+              <a href="#" class="header-info-current-user-name">Равшан
+                Джамшутович</a>
+            </div>
             <ul class="header-info-user-nav-list">
-              <li class="header-info-user-nav-item"><a href="#">Мои заказы</a></li>
-              <li class="header-info-user-nav-item"><a href="#">Личный кабинет</a></li>
+              <li class="header-info-user-nav-item header-user-order"><a href="#">Мои заказы</a></li>
+              <li class="header-info-user-nav-item header-user-personal-acc"><a href="#">Личный кабинет</a></li>
             </ul>
           </div>
         </div>
@@ -186,7 +193,7 @@
               <ul class="products-list">
                 <li class="products-item">
                   <img src="img/catalog/bosch-bfg-6000.png" alt="Перфоратор BOSH BFG 6000" width="144" height="128"
-                    class="product-image">
+                    class="product-img">
                   <div class="products-button-card-wrap">
                     <button type="button" class="button products-button-buy">купить</button>
                     <button type="button" class="button products-button-bookmark">в закладки</button>
@@ -200,7 +207,7 @@
 
                 <li class="products-item">
                   <img src="img/catalog/bosch-bfg-6000.png" alt="Перфоратор BOSH BFG 6000" width="144" height="128"
-                    class="product-image">
+                    class="product-img">
                   <div class="products-button-card-wrap">
                     <button type="button" class="button products-button-buy">купить</button>
                     <button type="button" class="button products-button-bookmark">в закладки</button>
@@ -214,7 +221,7 @@
 
                 <li class="products-item">
                   <img src="img/catalog/bosch-bfg-6000.png" alt="Перфоратор BOSH BFG 6000" width="144" height="128"
-                    class="product-image">
+                    class="product-img">
                   <span class="label-new">new</span>
                   <div class="products-button-card-wrap">
                     <button type="button" class="button products-button-buy">купить</button>
@@ -230,7 +237,7 @@
 
                 <li class="products-item">
                   <img src="img/catalog/bosch-bfg-3000.png" alt="Перфоратор BOSH BFG 3000" width="127" height="112"
-                    class="product-image">
+                    class="product-img">
                   <span class="label-new">new</span>
                   <div class="products-button-card-wrap">
                     <button type="button" class="button products-button-buy">купить</button>
@@ -246,7 +253,7 @@
 
                 <li class="products-item">
                   <img src="img/catalog/bosch-bfg-6000.png" alt="Перфоратор BOSH BFG 6000" width="144" height="128"
-                    class="product-image">
+                    class="product-img">
                   <div class="products-button-card-wrap">
                     <button type="button" class="button products-button-buy">купить</button>
                     <button type="button" class="button products-button-bookmark">в закладки</button>
@@ -260,7 +267,7 @@
 
                 <li class="products-item">
                   <img src="img/catalog/bosch-bfg-2000.png" alt="Перфоратор BOSH BFG 2000" width="144" height="128"
-                    class="product-image">
+                    class="product-img">
                   <span class="label-new">new</span>
                   <div class="products-button-card-wrap">
                     <button type="button" class="button products-button-buy">купить</button>
@@ -276,7 +283,7 @@
 
                 <li class="products-item">
                   <img src="img/catalog/bosch-bfg-3000.png" alt="Перфоратор BOSH BFG 3000" width="127" height="112"
-                    class="product-image">
+                    class="product-img">
                   <span class="label-new">new</span>
                   <div class="products-button-card-wrap">
                     <button type="button" class="button products-button-buy">купить</button>
@@ -291,7 +298,7 @@
 
                 <li class="products-item">
                   <img src="img/catalog/bosch-bfg-6000.png" alt="Перфоратор BOSH BFG 6000" width="144" height="128"
-                    class="product-image">
+                    class="product-img">
                   <div class="products-button-card-wrap">
                     <button type="button" class="button products-button-buy">купить</button>
                     <button type="button" class="button products-button-bookmark">в закладки</button>
@@ -305,7 +312,7 @@
 
                 <li class="products-item">
                   <img src="img/catalog/bosch-bfg-2000.png" alt="Перфоратор BOSH BFG 2000" width="127" height="112"
-                    class="product-image">
+                    class="product-img">
                   <span class="label-new">new</span>
                   <div class="products-button-card-wrap">
                     <button type="button" class="button products-button-buy">купить</button>
