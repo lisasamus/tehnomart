@@ -19,7 +19,7 @@
       <div class="container">
         <div class="top-nav-wrap">
           <div class="top-nav-wrap-wrap">
-            <a href="#" class="logo button-red">
+            <a href="#" class="top-nav-logo logo button-red">
               <img class="logo-img" src="img/icons/logo-technomart.svg" width="108" height="18" alt="logo">
             </a>
             <form action="https://echo.htmlacademy.ru" method="GET" class="top-nav-form-search">
@@ -30,9 +30,15 @@
             </form>
           </div>
           <ul class="top-nav-first-list">
-            <li class="top-nav-first-list-item"><a href="#" class="top-nav-bookmark">Закладки</a></li>
-            <li class="top-nav-first-list-item"><a href="#" class="top-nav-cart">Корзина</a></li>
-            <li class="top-nav-first-list-item"><a href="#" class="top-nav-order">Оформить заказ</a></li>
+            <li class="top-nav-first-list-item top-nav-first-list-bookmark">
+              <a href="#" class="top-nav-bookmark">Закладки: 0</a>
+            </li>
+            <li class="top-nav-first-list-item top-nav-first-list-cart">
+              <a href="#" class="top-nav-cart">Корзина: 0</a>
+            </li>
+            <li class="top-nav-first-list-item top-nav-first-list-order">
+              <a href="#" class="top-nav-order">Оформить заказ</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -97,41 +103,29 @@
       <h2 class="heading-hidden">Преимущества</h2>
       <div class="container">
         <ul class="features-list">
-          <li class="feature-item feature-item1">
-            <div class="feature-materials">
-              <h3 class="feature-heading">Материалы</h3>
-              <div class="feature-button-wrap">
-                <a href="#" class="button feature-button">на любой вкус</a>
-              </div>
-            </div>
+          <li class="feature-item feature-item1 feature-materials">
+            <h3 class="feature-heading">Материалы</h3>
+            <a href="#" class="button feature-button">на любой вкус</a>
           </li>
 
-          <li class="feature-item feature-item2">
-            <div class="feature-tools">
-              <h3 class="feature-heading">Инструмент</h3>
-              <a href="#" class="button feature-button">на все случаи</a>
-            </div>
+          <li class="feature-item feature-item2 feature-tools">
+            <h3 class="feature-heading">Инструмент</h3>
+            <a href="#" class="button feature-button">на все случаи</a>
           </li>
 
-          <li class="feature-item feature-item3">
-            <div class="feature-equipment">
-              <h3 class="feature-heading">Техника</h3>
-              <a href="#" class="button feature-button">для стройки</a>
-            </div>
+          <li class="feature-item feature-item3 feature-equipment">
+            <h3 class="feature-heading">Техника</h3>
+            <a href="#" class="button feature-button">для стройки</a>
           </li>
 
-          <li class="feature-item feature-item4">
-            <div class="feature-sales">
-              <h3 class="feature-heading">Скидки 50%</h3>
-              <a href="#" class="button feature-button">на 350 товаров</a>
-            </div>
+          <li class="feature-item feature-item4 feature-sales">
+            <h3 class="feature-heading">Скидки 50%</h3>
+            <a href="#" class="button feature-button">на 350 товаров</a>
           </li>
 
-          <li class="feature-item feature-item5">
-            <div class="feature-delivery">
-              <h3 class="feature-heading">Доставка</h3>
-              <a href="#" class="button feature-button">бесплатно</a>
-            </div>
+          <li class="feature-item feature-item5 feature-delivery">
+            <h3 class="feature-heading">Доставка</h3>
+            <a href="#" class="button feature-button">бесплатно</a>
           </li>
 
           <li class="slider">
@@ -178,9 +172,10 @@
 
           <ul class="popular-products-list">
             <li class="products-item">
-              <img src="img/catalog/bosch-bfg-9000.png" alt="Перфоратор BOSH BFG 9000" width="184" height="164"
-                class="product-img">
-
+              <div class="product-img-box">
+                <img src="img/catalog/bosch-bfg-9000.png" alt="Перфоратор BOSH BFG 9000" width="184" height="164"
+                  class="product-img">
+              </div>
               <!--<div class="products-button-card-wrap">
                 <button type="button" class="button products-button-buy">купить</button>
                 <button type="button" class="button products-button-bookmark">в закладки</button>
@@ -193,8 +188,10 @@
             </li>
 
             <li class="products-item">
-              <img src="img/catalog/bosch-bfg-3000.png" alt="Перфоратор BOSH BFG 3000" width="127" height="112"
-                class="product-img">
+              <div class="product-img-box">
+                <img src="img/catalog/bosch-bfg-3000.png" alt="Перфоратор BOSH BFG 3000" width="127" height="112"
+                  class="product-img">
+              </div>
               <span class="label-new">new</span>
               <div class="products-button-card-wrap">
                 <button type="button" class="button products-button-buy">купить</button>
@@ -207,8 +204,10 @@
             </li>
 
             <li class="products-item">
-              <img src="img/catalog/bosch-bfg-6000.png" alt="Перфоратор BOSH BFG 6000" width="144" height="128"
-                class="product-img">
+              <div class="product-img-box">
+                <img src="img/catalog/bosch-bfg-6000.png" alt="Перфоратор BOSH BFG 6000" width="144" height="128"
+                  class="product-img">
+              </div>
               <div class="products-button-card-wrap">
                 <button type="button" class="button products-button-buy">купить</button>
                 <button type="button" class="button products-button-bookmark">в закладки</button>
@@ -220,8 +219,10 @@
             </li>
 
             <li class="products-item">
-              <img src="img/catalog/bosch-bfg-2000.png" alt="Перфоратор BOSH BFG 2000" width="127" height="112"
-                class="product-img">
+              <div class="product-img-box">
+                <img src="img/catalog/bosch-bfg-2000.png" alt="Перфоратор BOSH BFG 2000" width="127" height="112"
+                  class="product-img">
+              </div>
               <span class="label-new">new</span>
               <div class="products-button-card-wrap">
                 <button type="button" class="button products-button-buy">купить</button>
@@ -312,16 +313,14 @@
           <ul class="service-description-list">
             <li class="service-delivery">
               <h3 class="service-item-heading">Доставка</h3>
-              <div class="service-item-wrap">
-                <p class="service-item-text">
-                  Мы с удовольствием доставим ваш товар прямо
-                  к вашему подъезду совершенно бесплатно!
-                  Ведь мы неплохо заработаем,
-                  поднимая его на ваш этаж!
-                </p>
-                <img src="img/bigdecorative/trotter.png" alt="Грузовая машина" width="486" height="261"
-                  class="service-img">
-              </div>
+              <p class="service-item-text">
+                Мы с удовольствием доставим ваш товар прямо
+                к вашему подъезду совершенно бесплатно!
+                Ведь мы неплохо заработаем,
+                поднимая его на ваш этаж!
+              </p>
+              <img src="img/bigdecorative/trotter.png" alt="Грузовая машина" width="486" height="261"
+                class="service-img">
             </li>
 
             <!--<li class="service-guarantee">
@@ -391,7 +390,7 @@
   <footer class="main-footer">
     <div class="container">
       <section class="footer-first-line">
-        <a href="#" class="logo button-red">
+        <a href="#" class="footer-logo logo button-red">
           <img class="logo-img" src="img/icons/logo-technomart.svg" width="108" height="18" alt="logo">
         </a>
         <nav class="footer-nav">
@@ -421,16 +420,16 @@
           <a href="tel+78005558628" class="phone">+7 800 555-86-28</a>
         </p>
         <ul class="footer-second-nav-list">
-          <li class="footer-second-nav-list">
+          <li class="footer-second-nav-item">
             <a href="#" class="footer-second-nav-link">Материалы</a>
           </li>
-          <li class="footer-second-nav-list">
+          <li class="footer-second-nav-item">
             <a href="#" class="footer-second-nav-link">Техника</a>
           </li>
-          <li class="footer-second-nav-list">
+          <li class="footer-second-nav-item">
             <a href="#" class="footer-second-nav-link">Инструмент</a>
           </li>
-          <li class="footer-second-nav-list">
+          <li class="footer-second-nav-item">
             <a href="#" class="footer-second-nav-link">Спецпредложения</a>
           </li>
         </ul>
