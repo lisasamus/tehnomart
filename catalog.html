@@ -130,33 +130,46 @@
             <form action="GET" class="filter-form">
               <fieldset class="filter-price">
                 <legend class="filter-price-name">Цена:</legend>
-                <input type="range" min="0" max="30000" step="100" name="price" id="price-range"
-                  class="filter-price-range filter-beige">
-                <input type="number" name="min_price" placeholder="0" class="filter-price-input filter-beige">
-                <input type="number" name="max_price" placeholder="30000" class="filter-price-input filter-beige">
+                <div class="filter-range">
+                  <div class="filter-range-controls">
+                    <div class="filter-range-scale">
+                      <div class="filter-range-bar"></div>
+                    </div>
+                    <div class="filter-range-toggle filter-range-toggle-min"></div>
+                    <div class="filter-range-toggle filter-range-toggle-max"></div>
+                  </div>
+                  <div class="filter-price-controls">
+                    <input type="number" name="min_price" placeholder="0" class="filter-price-input filter-beige">
+                    <input type="number" name="max_price" placeholder="30000" class="filter-price-input filter-beige">
+                  </div>
               </fieldset>
 
               <fieldset class="filter-brands">
                 <legend class="filter-brands-name">Производители:</legend>
                 <ul class="filter-brands-list">
                   <li>
-                    <input type="checkbox" name="BOSCH" id="filter-bosch" checked>
+                    <input type="checkbox" name="BOSCH" id="filter-bosch" checked
+                      class="visually-hidden filter-input-checkbox">
                     <label for="filter-bosch">BOSCH</label>
                   </li>
                   <li>
-                    <input type="checkbox" name="interscol" id="filter-interscol">
+                    <input type="checkbox" name="interscol" id="filter-interscol"
+                      class="visually-hidden filter-input-checkbox">
                     <label for="filter-interscol">интерскол</label>
                   </li>
                   <li>
-                    <input type="checkbox" name="makita" id="filter-makita" checked>
+                    <input type="checkbox" name="makita" id="filter-makita" checked
+                      class="visually-hidden filter-input-checkbox">
                     <label for="filter-makita">makita</label>
                   </li>
                   <li>
-                    <input type="checkbox" name="dewalt" id="filter-dewalt">
+                    <input type="checkbox" name="dewalt" id="filter-dewalt"
+                      class="visually-hidden filter-input-checkbox">
                     <label for="filter-dewalt">dewalt</label>
                   </li>
                   <li>
-                    <input type="checkbox" name="hitachi" id="filter-hitachi">
+                    <input type="checkbox" name="hitachi" id="filter-hitachi"
+                      class="visually-hidden filter-input-checkbox">
                     <label for="filter-hitachi">hitachi</label>
                   </li>
                 </ul>
@@ -166,11 +179,12 @@
                 <legend class="filter-type-name">Питание:</legend>
                 <ul class="filter-type-list">
                   <li class="filter-type-item">
-                    <input type="radio" name="meal" id="filter-accum" checked>
+                    <input type="radio" name="meal" id="filter-accum" checked
+                      class="visually-hidden filter-input-radio">
                     <label for="filter-accum">аккумуляторные</label>
                   </li>
                   <li class="filter-type-item">
-                    <input type="radio" name="meal" id="filter-network">
+                    <input type="radio" name="meal" id="filter-network" class="visually-hidden filter-input-radio">
                     <label for="filter-network">сетевые</label>
                   </li>
                 </ul>
@@ -186,13 +200,27 @@
                 <li class="filter-sort-current filter-sort-item"><a href="#" class="filter-sort-link">по цене</a></li>
                 <li class="filter-sort-item"><a href="#" class="filter-sort-link">по типу</a></li>
                 <li class="filter-sort-item"><a href="#" class="filter-sort-link">по функционалу</a></li>
-                <li class="filter-sort-item"><a href="#" class="filter-sort-link">по возрастанию</a></li>
-                <li class="filter-sort-item"><a href="#" class="filter-sort-link">по убыванию</a></li>
+                <li class="filter-sort-item">
+                  <a href="#" class="filter-sort-to-max filter-sort-symbol-current">
+                    <span class="visually-hidden">сортировка по возрастанию</span>
+                    <svg width="11" height="10" viewBox="0 0 11 10" fill="none">
+                      <path d="M5.5 10L0 0H11" fill="#C5C5C5" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="filter-sort-item">
+                  <a href="#" class="filter-sort-to-min">
+                    <span class="visually-hidden">сортировка по убыванию</span>
+                    <svg width="11" height="10" viewBox="0 0 11 10" fill="none">
+                      <path d="M5.5 10L0 0H11" fill="#C5C5C5" />
+                    </svg>
+                  </a>
+                </li>
               </ul>
             </section>
 
             <section class="products">
-              <h3 class="heading-hidden">товары</h3>
+              <h3 class="visually-hidden">товары</h3>
               <ul class="products-list">
                 <li class="products-item">
                   <div class="product-img-box">
