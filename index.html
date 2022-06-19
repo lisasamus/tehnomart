@@ -22,12 +22,18 @@
             <a href="#" class="top-nav-logo logo button-red">
               <img class="logo-img" src="img/icons/logo-technomart.svg" width="108" height="18" alt="logo">
             </a>
-            <form action="https://echo.htmlacademy.ru" method="GET" class="top-nav-form-search">
-              <button type="submit" class="top-nav-button-search">
-                <img class="top-nav-search-img" src="#" alt="Поиск">
-              </button>
-              <input name="search" type="search" placeholder="Поиск: " class="top-nav-input-search">
-            </form>
+            <div class="top-nav-search-wrap">
+              <form action="https://echo.htmlacademy.ru" method="GET" class="top-nav-form-search">
+                <button type="submit" class="top-nav-button-search">
+                  <svg width="17" height="17" viewBox="0 0 17 17" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"
+                      fill="white" />
+                  </svg>
+                </button>
+                <input name="search" type="search" placeholder="Поиск: " class="top-nav-input-search">
+              </form>
+            </div>
           </div>
           <ul class="top-nav-first-list">
             <li class="top-nav-first-list-item top-nav-first-list-bookmark">
@@ -109,6 +115,7 @@
       <div class="container">
         <ul class="features-list">
           <li class="feature-item feature-item1 feature-materials">
+            <span class="label-new">new</span>
             <h3 class="feature-heading">Материалы</h3>
             <a href="#" class="button feature-button">на любой вкус</a>
             <img src="img/icons/vedro.svg" alt="" width="44" height="65" class="feature-materials-icon">
@@ -144,28 +151,30 @@
                 <img src="img/foto/perforator-man.jpg" alt="Перфоратор" width="620" height="266" class="slider-img">
                 <p class="slider-caption">Перфораторы</p>
                 <p class="slider-text">Настоящие мужские игрушки</p>
-                <button type="button" class="slider-forward" aria-label="Вперед">
-                  <img class="slider-forward-img" src="img/icons/icon-right-small.png" alt="">
-                </button>
-                <button type="button" class="slider-back" aria-label="Назад">
-                  <img class="slider-back-img" src="img/icons/icon-right-small.png" alt="">
-                </button>
-                <a href="#" class="button slider-button button-red">Открыть каталог</a>
               </li>
               <li class="slider-item">
                 <img src="img/foto/drel-man.jpg" alt="Дрель" width="620" height="266" class="slider-img">
                 <p class="slider-caption">дрели</p>
                 <p class="slider-text">Соседям на радость</p>
-                <button type="button" class="slider-forward">
-                  <img class="slider-forward-img" src="#" alt="Вперед">
-                </button>
-                <button type="button" class="slider-back">
-                  <img class="slider-back-img" src="#" alt="Назад">
-                </button>
-                <a href="#" class="button slider-button button-red">Открыть каталог</a>
               </li>
             </ul>
-
+            <div class="slider-button-wrap">
+              <button type="button" class="slider-forward slider-arrow-button" aria-label="Вперед">
+                <svg width="22" height="40" viewBox="0 0 22 40" fill="none">
+                  <path
+                    d="M19.9244 0.941467L21.9225 2.98927L4.90696 20.4361L21.978 37.9376L19.9789 39.9854L0.910614 20.4361L19.9244 0.941467Z"
+                    fill="white" />
+                </svg>
+              </button>
+              <button type="button" class="slider-back slider-arrow-button" aria-label="Назад">
+                <svg width="22" height="40" viewBox="0 0 22 40" fill="none">
+                  <path
+                    d="M19.9244 0.941467L21.9225 2.98927L4.90696 20.4361L21.978 37.9376L19.9789 39.9854L0.910614 20.4361L19.9244 0.941467Z"
+                    fill="white" />
+                </svg>
+              </button>
+              <a href="#" class="button slider-button button-red">Открыть каталог</a>
+            </div>
           </li>
         </ul>
       </div>
@@ -186,10 +195,10 @@
                 <img src="img/catalog/bosch-bfg-9000.png" alt="Перфоратор BOSH BFG 9000" width="184" height="164"
                   class="product-img">
               </div>
-              <!--<div class="products-button-card-wrap">
+              <div class="products-button-card-wrap">
                 <button type="button" class="button products-button-buy">купить</button>
                 <button type="button" class="button products-button-bookmark">в закладки</button>
-              </div>-->
+              </div>
 
               <h3 class="product-heading">Перфоратор BOSH
                 BFG 9000</h3>
@@ -401,7 +410,7 @@
     <div class="container">
       <section class="footer-first-line">
         <a href="#" class="footer-logo logo button-red">
-          <img class="logo-img" src="img/icons/logo-technomart.svg" width="108" height="18" alt="logo">
+          <img class="logo-img" src="img/icons/logo-technomart.svg" width="138" height="23" alt="logo">
         </a>
         <nav class="footer-nav">
           <ul class="footer-first-nav-list">
