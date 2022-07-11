@@ -1121,6 +1121,7 @@
   height: auto;
   background-color: var(--basic-gray);
   margin-bottom: 25px;
+  cursor: pointer;
 }
 
 .contacts-button {
@@ -1356,6 +1357,7 @@
 }
 
 .modal {
+  display: none;
   filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
   background-color: var(--basic-white);
   /*position: fixed;
@@ -1363,6 +1365,15 @@
   right: 0;
   bottom: 0;
   top: 0;*/
+}
+
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .modal-contact {
@@ -2110,4 +2121,47 @@
   min-width: 192px;
   padding: 10px;
   cursor: pointer;
+}
+
+/* Animations */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
