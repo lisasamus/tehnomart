@@ -140,6 +140,10 @@
   margin-bottom: 59px;
 }
 
+.catalog-header {
+  margin-bottom: 15px;
+}
+
 .top-nav {
   margin-bottom: 41px;
 }
@@ -156,7 +160,7 @@
 }
 
 .top-nav-logo {
-  padding: 12px 56px 12px;
+  padding: 12px 56px 8px;
   margin: 0;
   position: relative;
 }
@@ -171,30 +175,30 @@
   left: 0;
 }
 
-.top-nav-search-wrap {
-  padding: 10px 10px 10px 17px;
+.top-nav-form-search {
+  position: relative;
   min-width: 271px;
   height: 100%;
 }
 
-.top-nav-search-wrap svg {
+.top-nav-form-search svg {
   opacity: 0.3;
 }
 
-.top-nav-search-wrap:hover svg,
-.top-nav-search-wrap:focus svg {
+.top-nav-form-search:hover svg,
+.top-nav-form-search:focus svg {
   opacity: 1;
 }
 
 .top-nav-button-search {
+  position: absolute;
+  top: 12px;
+  left: 17px;
   border: none;
   padding: 0;
   background-color: transparent;
 }
 
-.top-nav-form-search {
-  border: none;
-}
 
 /*flex-header-info*/
 .header-info-wrap {
@@ -245,18 +249,35 @@
 }
 
 .top-nav-input-search {
+  width: 100%;
+  height: 100%;
   background-color: var(--dark-top-nav);
   border: none;
-  padding: 0;
+  padding: 5px 10px 9px 42px;
 }
 
 .top-nav-input-search::placeholder {
   color: var(--basic-white);
 }
 
+.top-nav-input-search:focus,
+.top-nav-input-search:active {
+  background-color: var(--basic-white);
+}
+
+.top-nav-input-search:focus+.top-nav-button-search path,
+.top-nav-input-search:active .top-nav-button-search path {
+  fill: var(--basic-red);
+}
+
 .top-nav-first-list-bookmark {
   padding: 9px 26px 9px 49px;
   height: 100%;
+}
+
+top-nav-bookmark {
+  display: block;
+  padding-left: -10px;
 }
 
 .top-nav-first-list-bookmark:active,
@@ -294,7 +315,7 @@
   content: "";
   position: absolute;
   top: 13px;
-  left: 25px;
+  left: 19px;
   width: 14px;
   height: 16px;
   background-image: url("../img/icons/icon-bookmark.svg");
@@ -339,6 +360,7 @@
   flex-direction: column;
   font-size: 14px;
   color: var(--basic-dark);
+  margin: 0 0 0 27px;
 }
 
 .header-info-contacts-phone {
@@ -366,9 +388,8 @@
 }
 
 .header-info-contacts-address {
-  padding: 0;
+  padding: 0 0 0 7px;
   margin: 0;
-  margin-top: 3px;
 }
 
 .header-info-user-button {
@@ -727,13 +748,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 0 8px 0;
+  margin: 0 0 -20px 0;
 }
 
 .product-img {
   display: block;
   max-width: 100%;
   height: auto;
+  margin: 0 0 25px 0;
 }
 
 .heading {
@@ -1086,7 +1108,7 @@
 }
 
 .about-text p {
-  margin: 0;
+  margin: 0 0 33px 0;
   padding: 0;
 }
 
@@ -1238,7 +1260,7 @@
 }
 
 .footer-copyright p {
-  margin: 0;
+  margin: 0 110px 0 0;
   padding: 0;
 }
 
@@ -1250,7 +1272,7 @@
 .footer-social-list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 50px 0 0;
   display: flex;
   align-items: center;
 }
@@ -1360,11 +1382,11 @@
   display: none;
   filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
   background-color: var(--basic-white);
-  /*position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;*/
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
 }
 
 .modal-show {
@@ -1384,7 +1406,6 @@
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-black);
-  position: relative;
 }
 
 .modal-contact::before {
@@ -1458,7 +1479,6 @@
 
 .modal-map {
   width: 943px;
-  position: relative;
 }
 
 .modal-map::before {
@@ -1590,7 +1610,7 @@
   display: flex;
   padding: 0 0 0 41px;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .bread-crumps-item {
@@ -1818,6 +1838,9 @@
   background-image: url(../img/icons/filter/checkbox-on.svg);
 }
 
+.filter-input-checkbox:focus+label::before {
+  outline: 2px solid var(--gray);
+}
 
 .filter-input-radio+label::before {
   content: "";
@@ -1841,13 +1864,19 @@
   border-radius: 50%;
 }
 
+.filter-input-radio:focus+label::before {
+  outline: 2px solid var(--gray);
+}
+
 .filter-button {
+  display: block;
   text-decoration: none;
   font-size: 13px;
   line-height: 18px;
   color: var(--basic-black);
   border: solid 1px var(--light-gray);
   padding: 10px 80px 10px 78px;
+  min-width: 220px;
 }
 
 .filter-sort {
@@ -1963,7 +1992,7 @@
   padding: 0;
   margin: 0;
   margin: 0 0 59px 0;
-  padding: 48px 0 0 0;
+  padding: 43px 0 0 0;
 }
 
 .pagination-item {
@@ -1992,6 +2021,7 @@
 }
 
 .pagination-link {
+  display: block;
   text-decoration: none;
   color: var(--basic-black);
 }
@@ -2046,7 +2076,6 @@
 
 .modal-catalog {
   width: 620px;
-  position: relative;
 }
 
 .modal-catalog::before {
