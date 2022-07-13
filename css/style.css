@@ -1608,13 +1608,25 @@ top-nav-bookmark {
 
 .bread-crumps {
   display: flex;
-  padding: 0 0 0 41px;
+  padding: 0;
   margin: 0;
   margin-bottom: 18px;
 }
 
 .bread-crumps-item {
-  margin: 0 41px 0 0;
+  position: relative;
+  margin: 0 42px 0 0;
+  font-family: "PT Sans", Arial, sans-serif;
+}
+
+.bread-crumps-item:not(:first-child)::before {
+  position: absolute;
+  content: '';
+  width: 7px;
+  height: 10px;
+  left: -25px;
+  top: 6px;
+  background-image: url(../img/icons/icon-breadcrumps.svg);
 }
 
 .bread-crumps-item:last-child {
